@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">MathQuiz</string>
+
+    <string name="str_add">Addition</string>
+    <string name="str_sub">Subtraction</string>
+    <string name="str_multiply">Production</string>
+    <string name="str_quit">Quit</string>
+
+
 </resources>

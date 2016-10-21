@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/tv_questionnumber"
+                android:layout_weight="0.5"
+                android:layout_gravity="left"
+                android:textSize="@dimen/font_text_size_enter"
+                android:textColor="#000000"/>
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/timer"/>
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_timer"
+                android:layout_weight="0.5"
+                android:layout_gravity="end"
+                android:text=""
+                android:textSize="@dimen/font_text_size_enter"
+                android:textColor="#000000"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_text_size"
+                android:text="  "
+                />
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_text_size"
+                android:text="5"
+                android:id="@+id/tv_num1"
+                android:textColor="#000000"/>
+                </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_text_size"
+                    android:text="+"
+                    android:textColor="@color/red"
+                    android:id="@+id/tv_operator"/>
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_text_size"
+                    android:text="5"
+                    android:id="@+id/tv_num2"
+                    android:textColor="#000000"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="60dip"
+                android:layout_height="1dp"
+                android:background="@android:color/black"/>
+            <android.support.v7.widget.AppCompatEditText
+                android:layout_width="70dip"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_text_size"
+                android:id="@+id/ed_answer"
+                android:maxLength="2"
+                android:textColor="#000000"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

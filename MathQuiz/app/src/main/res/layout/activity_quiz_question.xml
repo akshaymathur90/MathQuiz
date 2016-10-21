@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="edu.sjsu.mathquiz.QuizQuestion">
+
+    <include layout="@layout/toolbar_actionbar_file" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="5dp"
+        android:orientation="vertical">
+        <fragment
+            android:name="edu.sjsu.mathquiz.QuestionFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout="@layout/questionlayout"
+            android:id="@+id/fragment_question"/>
+        <fragment
+            android:name="edu.sjsu.mathquiz.NumericPadFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout="@layout/numericpadlayout"
+            android:id="@+id/fragment_numericpad" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
